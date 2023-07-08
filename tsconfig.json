@@ -1,0 +1,15 @@
+{
+	"compilerOptions": {
+		"target": "es2021",
+		"module": "commonjs",
+		"outDir": "./dist",
+		"strict": true,
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+		"skipLibCheck": true,
+		"resolveJsonModule": true
+	},
+	"include": ["src/tests/**/*.ts"],
+	"files": ["src/index.ts"],
+	"exclude": ["node_modules"]
+}
