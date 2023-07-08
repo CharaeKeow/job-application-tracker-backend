@@ -3,7 +3,7 @@ import { Router } from 'express';
 const router = Router();
 
 router.get('/', (req, res) => {
-	res.status(200).send('Hello world!');
+	res.status(200).send({ success: true, message: 'Backend data!' });
 });
 
 export default router;

@@ -7,7 +7,7 @@ import router from './controller/index';
 const app = express();
 const port = process.env.PORT || 8000;
 
-const allowedOrigin = ['localhost:3000'];
+const allowedOrigin = ['http://localhost:3000'];
 
 app.use(
 	cors({
