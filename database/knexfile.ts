@@ -14,7 +14,7 @@ const config: KnexConfig = {
 			port: 5432,
 			user: process.env.DB_USER,
 			password: process.env.DB_PASSWORD,
-			// database: '',
+			database: process.env.DB_NAME,
 		},
 		migrations: {
 			directory: './database/migrations',
