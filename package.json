@@ -11,6 +11,7 @@
 		"format": "prettier --write .",
 		"migration": "ts-node database/migrate.ts",
 		"rollback": "ts-node database/rollback.ts",
+		"seed": "ts-node database/seed.ts",
 		"preinstall": "npx only-allow pnpm"
 	},
 	"author": "",

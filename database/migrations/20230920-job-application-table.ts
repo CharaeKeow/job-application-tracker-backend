@@ -9,9 +9,11 @@ export async function up(knex: Knex): Promise<void> {
 		table.string('position');
 		table.integer('status_id');
 		table.text('link');
-		table.text('description'); // This could be extended to a separate table later. TBD
+		table.text('job_description'); // This could be extended to a separate table later. TBD
 		// still debating whether I want platform or not. It'd be a dropdown, but the list would be LONG. Making it a text field also sounds... wrong? TBD
 		// table.number('platform_id');
+		table.integer('rating').unsigned().checkBetween([0, 5]);
+
 		table.timestamp('date_applied');
 		table.timestamp('created_at').defaultTo(knex.fn.now());
 		table.timestamp('updated_at');
