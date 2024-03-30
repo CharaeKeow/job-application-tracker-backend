@@ -20,7 +20,9 @@
 		"sourceMap": true,
 
 		/* If your code doesn't run in the DOM: */
-		"lib": ["es2022"]
+		"lib": ["es2022"],
+
+		"typeRoots": ["./src/types"]
 	},
 	"include": ["src/tests/**/*.ts"],
 	"files": ["src/index.ts"],
