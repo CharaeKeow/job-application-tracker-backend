@@ -1,7 +1,7 @@
-import knex from '../../database/connection';
 import { v4 as uuidv4 } from 'uuid';
 
-import { User } from '../types/user';
+import knex from '../../database/connection';
+import type { User } from '../types/user';
 
 class UserModel {
 	async getUserByEmailAndProvider({

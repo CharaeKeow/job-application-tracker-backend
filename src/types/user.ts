@@ -4,3 +4,5 @@ export type User = {
 	provider: 'github' | 'google';
 	image: string;
 };
+
+export type UserEmailAndProvider = Pick<User, 'email' | 'provider'>;

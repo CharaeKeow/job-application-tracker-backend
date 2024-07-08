@@ -1,7 +1,9 @@
-import express from 'express';
-import cors from 'cors';
 import 'dotenv/config';
 
+import cors from 'cors';
+import express from 'express';
+
+import jobApplicationRoutes from './routes/job-application.route';
 import userRoutes from './routes/user.route';
 
 const app = express();
@@ -16,7 +18,9 @@ app.use(
 );
 
 app.use(express.json());
+
 app.use('/api/user', userRoutes);
+app.use('/api/job-application', jobApplicationRoutes);
 
 app.listen(port, () => {
 	console.log(`Server is running on http://localhost:${port}`);

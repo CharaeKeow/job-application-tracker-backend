@@ -1,4 +1,4 @@
-import { Request, Response } from 'express';
+import type { Request, Response } from 'express';
 
 import UserService from '../services/user.service';
 
@@ -14,7 +14,9 @@ class UserController {
 			});
 
 			if (user) {
-				res.status(200).send({ exist: true });
+				const { id } = user;
+
+				res.status(200).send({ exist: true, id });
 				return;
 			}
 

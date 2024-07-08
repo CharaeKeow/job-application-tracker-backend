@@ -1,5 +1,5 @@
 import UserModel from '../models/users.model';
-import { User } from '../types/user';
+import type { User } from '../types/user';
 
 class UserService {
 	async getUserByEmailAndProvider({
